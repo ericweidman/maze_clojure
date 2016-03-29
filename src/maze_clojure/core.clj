@@ -21,7 +21,7 @@
     (get-in rooms [row (inc col)])])))
 
 (defn random-neighbor [rooms row col]
- (let [neighbors (possible-neighbors rooms col row)]
+ (let [neighbors (possible-neighbors rooms row col)]
    (if (pos? (count neighbors))
      (rand-nth neighbors)
      nil)))
